@@ -16,9 +16,13 @@ app.set('views', path.join(__dirname, 'resources/views'));
 //console.log('PATH: ',path.join(__dirname, 'resources/views'));
 app.get('/trang-tin', (req, res) => {
   return res.render('home');
-})
+});
 
 app.get('/news', (req, res) => {
   return res.render('news');
-})
+});
+
+app.get('/search', (req, res) => {
+  return res.render('search');
+});
 app.listen(port, () => console.log(`Example app listening at http://localhost:${port}`)); 
