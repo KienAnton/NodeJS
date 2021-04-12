@@ -14,7 +14,7 @@ app.engine('hbs', handlebars({
 app.set('view engine', 'hbs');
 app.set('views', path.join(__dirname, 'resources/views'));
 //console.log('PATH: ',path.join(__dirname, 'resources/views'));
-app.get('/', (req, res) => {
+app.get('/trang-tin', (req, res) => {
   return res.render('home');
 })
 
