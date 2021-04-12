@@ -14,7 +14,7 @@ app.engine('hbs', handlebars({
 app.set('view engine', 'hbs');
 app.set('views', path.join(__dirname, 'resources/views'));
 //console.log('PATH: ',path.join(__dirname, 'resources/views'));
-app.get('/tin-tuc', (req, res) => {
+app.get('/', (req, res) => {
   return res.render('home');
 })
 
